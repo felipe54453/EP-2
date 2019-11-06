@@ -1,2 +1,2 @@
-# EP-3
+# EP-2
 Felipe, João, Thiago
