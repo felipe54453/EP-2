@@ -154,7 +154,7 @@ def load_assets(img_dir):
    assets['chooseyourskin'] = pygame.image.load(path.join(img_dir, "chooseyourskin.png")).convert_alpha()
    return assets      
 
-   def menu(screen):
+def menu(screen):
 	
 	#Carrega a musica do jogo
 	pygame.mixer.music.load(path.join(snd_dir, 'CarelessWhisper.mp3'))
@@ -168,7 +168,7 @@ def load_assets(img_dir):
 	while state == MENU:
 		screen.blit(background,background_rect)
 		score_font= pygame.font.Font(path.join(fnt_dir, "i_fink_u_freeky.ttf"),50)
-		text_surface= score_font.render("Peter Kong", True, WHITE)
+		text_surface= score_font.render("Benga dos Bengas", True, WHITE)
 		text_rect= text_surface.get_rect()
 		text_rect.centery = (HEIGHT/2)
 		text_rect.centerx = (WIDTH/2)
@@ -187,7 +187,7 @@ def load_assets(img_dir):
 				if event.key == pygame.K_SPACE:
 					state = JOGO
 		pygame.display.flip()
-	return (state)    
+	return (state)
        
        
        
